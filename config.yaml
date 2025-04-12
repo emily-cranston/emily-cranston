@@ -1,0 +1,15 @@
+baseurl: "https://emily-cranston.netlify.app/"
+title: Emily Cranston
+theme: "hugo-theme-console"
+languageCode: en-us
+params:
+  navlinks:
+    - name: about me
+      url: about-me/
+    - name: portfolio
+      url: portfolio/
+    - name: resume
+      url: resume/
+    - name: contact
+      url: contact/
+
