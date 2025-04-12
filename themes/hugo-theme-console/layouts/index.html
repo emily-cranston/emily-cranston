@@ -2,12 +2,14 @@
 
 <h1>Hello!</h1>
 
-<p>
+<p style="display: flex; align-items: center;">
+  <span style="flex: 1;">
 I'm Emily - an MS Geography + Environment student who is passionate about using geospatial technologies to address climate change and reduce environmental disparities." <a href="about/">(more)</a>
+</span>
+<img src="Headshot_2024.jpg" style="height: 200px; width: 200px; object-fit: cover; margin-left: 20px">
 </p>
 <br/>
 
-<h1>Latest posts</h1>
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
@@ -23,7 +25,7 @@ I'm Emily - an MS Geography + Environment student who is passionate about using 
 {{ end }}
 </div>
 
-<h1>Latest photos</h1>
+
 
 <div class="image-grid">
 {{ with .Site.GetPage "/photos" }}

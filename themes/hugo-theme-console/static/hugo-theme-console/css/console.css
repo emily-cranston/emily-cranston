@@ -213,9 +213,7 @@ figure {
 }
 
 .terminal-prompt::after {
-    -webkit-animation: cursor 1s infinite;
-    animation: cursor 1s infinite;
-    width: 10px;
+    animation: none;
 }
 
 .terminal-prompt::before {
