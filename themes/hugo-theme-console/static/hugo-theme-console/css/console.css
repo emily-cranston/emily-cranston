@@ -79,7 +79,7 @@
         --global-font-size: 14px;
         --global-font-color: #444;
         --global-line-height: 1.6em;
-        --page-width: 70em;
+        --page-width: 60em;
     }
 }
 
@@ -125,9 +125,38 @@ h6,
     clear: both;
 }
 
-h1 {
-    margin-bottom: 150px;
+.intro-wrapper {
+  display: flex;
+  align-items: center; /* vertically center image with text block */
+  gap: 30px;
+  padding: 0 20px;
 }
+
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.greeting {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+.emily-intro-text {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.headshot {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+}
+
 
 .content-column-content p,
 .content-column-content li {
@@ -178,11 +207,13 @@ strong {
 }
 
 .logo {
-    font-weight: normal;
+    padding: 0 20px !important;
+    font-size: 1rem !important;
+    font-weight: bold;
 }
 
 .terminal-menu li {
-    margin-right: 30px;
+    padding: 0 20px !important;
 }
 
 figure {
@@ -213,6 +244,8 @@ figure {
 }
 
 .terminal-prompt::after {
+    content: "";
+    display: none;
     animation: none;
 }
 
