@@ -145,12 +145,22 @@ h6,
   margin: 0 0 10px 0;
 }
 
+.page-header {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
 .emily-intro-text {
   font-size: 1rem;
   margin: 0;
   line-height: 1.5;
 }
 
+.emily-page-text {
+  font-size: 0rem;
+  margin: 0;
+  line-height: 1.5;
+}
 .headshot {
   height: 300px;
   width: 250px;
@@ -256,6 +266,21 @@ figure {
 .gallery-image {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+
+.contact-info a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 .posts-list {
