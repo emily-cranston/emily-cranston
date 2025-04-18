@@ -157,6 +157,11 @@ h6,
 }
 
 .emily-page-text {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+.emily-resume-text {
   font-size: 0.85rem;
   margin: 0;
   line-height: 1.5;
