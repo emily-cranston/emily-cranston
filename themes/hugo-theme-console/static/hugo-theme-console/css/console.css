@@ -157,7 +157,7 @@ h6,
 }
 
 .emily-page-text {
-  font-size: 0rem;
+  font-size: 0.85rem;
   margin: 0;
   line-height: 1.5;
 }
@@ -173,6 +173,12 @@ h6,
     color: #666;
 }
 
+.divider {
+  border-top: 1px solid #666;  /* Color and thickness of the divider line */
+  margin: 10px 0;
+}
+
+  
 .btn-ghost {
     color: #666;
     background-color: transparent;
@@ -233,25 +239,7 @@ figure {
     margin-right: 60px;
 }
 
-.footer {
-    clear: both;
-    margin-top: 100px;
-    padding-top: 10px;
-    border-top: 1px solid var(--secondary-color);
-    color: var(--global-font-color);
-}
 
-.image-grid {
-    display: grid;
-    grid-template-rows: auto;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(calc(var(--page-width) / 4), 1fr)
-    );
-}
 
 .terminal-prompt::after {
     content: "";
@@ -366,5 +354,22 @@ figure {
     .footer {
         margin-top: 50px;
         padding-top: 5px;
+        font-size: 1rem;
+        margin-left: 40px; 
     }
+}
+footer {
+  font-size: 14px; /* Adjust the font size of the footer text */
+  line-height: 1.6; /* Optional: Adjust line height for better readability */
+  clear: both;  /* Ensure footer stays at the bottom */
+  margin-left: 20px; 
+}
+
+footer a {
+  font-size: 14px; /* Ensure links inside footer also have the same font size */
+}
+
+hr.footer-divider {
+  margin-left: 40px;  /* Add padding to the left */
+  margin-right: 40px; /* Add padding to the right */
 }
