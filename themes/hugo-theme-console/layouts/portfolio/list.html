@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>Portfolio</h1>
+<div style="display: flex; flex-direction: column; gap: 2rem;">
+  {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" style="display: flex; text-decoration: none; color: inherit; gap: 1rem;">
+      <img src="/{{ .Params.image }}" alt="{{ .Title }}" style="width: 150px; height: auto; border-radius: 8px;">
+      <div>
+        <h2 style="margin: 0;">{{ .Title }}</h2>
+        <p>{{ .Params.summary }}</p>
+      </div>
+    </a>
+  {{ end }}
+</div>
+{{ end }}
