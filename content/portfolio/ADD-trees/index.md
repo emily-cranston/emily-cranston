@@ -1,6 +1,9 @@
+
 ## Evaluating the Impact of Spatial Resolution and Topography on Climate Model Predictions
 
 This project explores whether topographic information, specifically slope, can help lower-resolution land surface model simulations replicate key outputs typically achieved at higher resolutions. This work was conducted using the Joint UK Land Environment Simulator (JULES), focusing on Exmoor National Park in the UK—a topographically complex region ideal for testing how terrain affects carbon and water fluxes.
+
+---
 
 ## Overview
 
@@ -10,7 +13,9 @@ This project explores whether topographic information, specifically slope, can h
 - **Spatial Resolutions**: 12 km (coarse) vs 1 km (fine)
 - **Goal**: Assess whether adding slope to coarse-resolution inputs improves simulation accuracy
 
-## Why Topography?
+---
+
+## Role of Topography
 
 Topographic features like slope and elevation drive local climate variability, especially in hilly or mountainous regions. These features influence:
 
@@ -19,6 +24,8 @@ Topographic features like slope and elevation drive local climate variability, e
 - Carbon uptake via plant productivity
 
 Despite this, most regional climate models don’t resolve these variations well due to computational limitations.
+
+---
 
 ##  Methods
 
@@ -32,6 +39,8 @@ Despite this, most regional climate models don’t resolve these variations well
   - Gross Primary Productivity (GPP; gC/m²/day)
 - **Statistical Tool**: Pearson correlation analysis
 
+---
+
 ## Key Findings
 
 - **Slope ≠ Strong Driver**: Slope had very weak correlations (R² < 0.06) with carbon and water flux variables.
@@ -39,6 +48,7 @@ Despite this, most regional climate models don’t resolve these variations well
   - Soil moisture (r = 1.00)
   - Canopy evaporation (r = 0.93)
   - Negative correlation with runoff (r = -0.90)
+![Pearson Correlation Matrix](/images/correlation_matrix.png)
 
 These results suggest that slope alone may not be enough to replicate high-resolution model behavior at coarse scales—but that hydrological relationships remain strong.
 

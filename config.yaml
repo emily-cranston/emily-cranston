@@ -12,4 +12,7 @@ params:
       url: resume/
     - name: contact
       url: contact/
+  permalinks:
+    portfolio: "/portfolio/:slug/"
+
 
