@@ -1,0 +1,73 @@
+<hr>
+
+<h2><strong>Evaluating the Impact of Spatial Resolution and Topography on Climate Model Predictions</strong></h2>
+
+<p>This project explores whether topographic information, specifically slope, can help lower-resolution land surface model simulations replicate key outputs typically achieved at higher resolutions. This work was conducted using the Joint UK Land Environment Simulator (JULES), focusing on Exmoor National Park in the UK—a topographically complex region ideal for testing how terrain affects carbon and water fluxes.</p>
+
+<hr>
+
+<h2><strong>Overview</strong></h2>
+
+<ul>
+  <li><strong>Model Used:</strong> JULES (Joint UK Land Environment Simulator)</li>
+  <li><strong>Study Area:</strong> Exmoor National Park, UK</li>
+  <li><strong>Time Period:</strong> 2040–2049</li>
+  <li><strong>Spatial Resolutions:</strong> 12 km (coarse) vs. 1 km (fine)</li>
+  <li><strong>Goal:</strong> Assess whether adding slope to coarse-resolution inputs improves simulation accuracy</li>
+</ul>
+
+<hr>
+
+<h2><strong>Role of Topography</strong></h2>
+
+<p>Topographic features like slope and elevation drive local climate variability, especially in hilly or mountainous regions. These features influence:</p>
+
+<ul>
+  <li>Rainfall patterns</li>
+  <li>Soil moisture retention</li>
+  <li>Carbon uptake via plant productivity</li>
+</ul>
+
+<p>Despite this, most regional climate models don’t resolve these variations well due to computational limitations.</p>
+
+<hr>
+
+<h2><strong>Methods</strong></h2>
+
+<ul>
+  <li><strong>Climate Input:</strong> UK Climate Projections (UKCP18)</li>
+  <li><strong>Downscaling:</strong> Used the <a href="https://github.com/ilyamaclean/mesoclim" target="_blank" rel="noopener noreferrer">mesoclim</a> package to downscale 12 km outputs from UKCP18 to 1 km</li>
+  <li><strong>Key Variables Analyzed:</strong>
+    <ul>
+      <li>Latent heat flux (W/m²)</li>
+      <li>Soil moisture (kg/m²)</li>
+      <li>Evapotranspiration (mm/day)</li>
+      <li>Runoff (mm/day)</li>
+      <li>Gross Primary Productivity (GPP; gC/m²/day)</li>
+    </ul>
+  </li>
+  <li><strong>Statistical Tool:</strong> Pearson correlation analysis</li>
+</ul>
+
+<hr>
+
+<h2><strong>Key Findings</strong></h2>
+
+<ul>
+  <li><strong>Slope ≠ Strong Driver:</strong> Slope had very weak correlations (R² &lt; 0.06) with carbon and water flux variables.</li>
+  <li><strong>Water–Energy Link Confirmed:</strong> Latent heat flux was strongly correlated with:
+    <ul>
+      <li>Soil moisture (r = 1.00)</li>
+      <li>Canopy evaporation (r = 0.93)</li>
+      <li>Runoff (r = -0.90)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/correlation_matrix.png" alt="Pearson Correlation Matrix" style="max-width: 100%; height: auto;"></p>
+
+<p>These results suggest that slope alone may not be enough to replicate high-resolution model behavior at coarse scales—but that hydrological relationships remain strong.</p>
+
+<hr>
+
+<p><em>This study was conducted by Emily Cranston, Department of Geography, University of Georgia, under the guidance of <a href="https://geography.uga.edu/directory/people/anna-harper" target="_blank" rel="noopener noreferrer">Dr. Anna Harper</a> and in collaboration with the <a href="https://www.exeter.ac.uk/research/leep/researchimpact/current-projects/add‑trees/" target="_blank" rel="noopener noreferrer">University of Exeter ADD-TREES project</a>.</em></p>
